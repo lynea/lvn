@@ -79,7 +79,7 @@ export default function ZorgWebsite() {
               animate={{ opacity: 1, x: 0 }}
               className="text-2xl font-bold text-violet-700"
             >
-              LVN
+              LucasZ&B
             </motion.div>
 
             {/* Desktop Navigation */}
@@ -203,7 +203,7 @@ export default function ZorgWebsite() {
           <AnimatedSection>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Waarom kiezen voor LVN?
+                Waarom kiezen voor LucasZ&B?
               </h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 Ontdek de voordelen van persoonlijke zorgverlening met
@@ -428,7 +428,7 @@ export default function ZorgWebsite() {
                   Contactgegevens
                 </h3>
 
-                <div className="space-y-6 flex justify-between">
+                <div className="space-y-6 flex lg:flex-row flex-col justify-between">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-violet-100rounded-full flex items-center justify-center flex-shrink-0">
                       <Phone className="w-6 h-6 text-violet-700" />
@@ -452,7 +452,7 @@ export default function ZorgWebsite() {
                       <h4 className="font-semibold text-gray-900 mb-1">
                         E-mail
                       </h4>
-                      <p className="text-gray-600">lucas@lvn.nl</p>
+                      <p className="text-gray-600">info@lucasz&b.nl</p>
                       <p className="text-sm text-gray-500">
                         Reactie binnen 24 uur
                       </p>
@@ -482,7 +482,7 @@ export default function ZorgWebsite() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-4">LVN</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">LucasZ&B</h3>
               <p className="text-gray-300 leading-relaxed">
                 Persoonlijke zorg dichtbij huis. Met passie en professionaliteit
                 zorg ik ervoor dat u zich veilig en geborgen voelt.
@@ -493,7 +493,7 @@ export default function ZorgWebsite() {
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <div className="space-y-2 text-gray-300">
                 <p>06 - 12 34 56 78</p>
-                <p>maria@LVN.nl</p>
+                <p>lucas@lvn.nl</p>
                 <p>Amsterdam en omgeving</p>
               </div>
             </div>
@@ -510,7 +510,7 @@ export default function ZorgWebsite() {
           </div>
 
           <div className="border-t border-gray-500 mt-8 pt-8 text-center text-white">
-            <p>&copy; 2024 LVN. Alle rechten voorbehouden.</p>
+            <p>&copy; 2024 LucasZ&B. Alle rechten voorbehouden.</p>
           </div>
         </div>
       </footer>
