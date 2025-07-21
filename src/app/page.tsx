@@ -84,7 +84,7 @@ export default function ZorgWebsite() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
-              {["Home", "Voordelen", "Over Mij", "Diensten", "Contact"].map(
+              {["Home", "Voordelen", "Over mij", "Diensten", "Contact"].map(
                 (item, index) => (
                   <motion.button
                     key={item}
@@ -154,9 +154,8 @@ export default function ZorgWebsite() {
                 <span className=" block">dichtbij huis</span>
               </h1>
               <p className="text-2xl text-white mb-8 leading-relaxed">
-                Als ervaren zorgverlener bied ik kwalitatieve, persoonlijke zorg
-                op maat. Met passie voor het vak en oog voor detail zorg ik
-                ervoor dat u zich veilig en geborgen voelt.
+                Als ervaren ZZP zorgprofessional bied ik deskundige en
+                persoonlijke zorg aan in diverse zorgsectoren.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
@@ -242,7 +241,7 @@ export default function ZorgWebsite() {
                 icon: Award,
                 title: "Ervaren professional",
                 description:
-                  "Meer dan 10 jaar ervaring in de zorgverlening met continue bijscholing",
+                  "Meer dan 8 jaar ervaring in de zorgverlening met continue bijscholing",
               },
             ].map((usp, index) => (
               <motion.div key={index} variants={fadeInUp}>
@@ -277,11 +276,12 @@ export default function ZorgWebsite() {
                   src="/portrait.jpg"
                   alt="Over mij"
                   className="w-full h-96 object-cover rounded-2xl shadow-lg"
+                  style={{ objectFit: "cover", objectPosition: "top" }}
                 />
                 <div className="absolute -bottom-6 -right-6 bg-violet-700 text-white p-6 rounded-xl shadow-lg">
                   <div className="flex items-center gap-2 mb-2">
                     <Star className="w-5 h-5 fill-current" />
-                    <span className="font-semibold">10+ jaar</span>
+                    <span className="font-semibold">8+ jaar</span>
                   </div>
                   <p className="text-sm">Ervaring in zorg</p>
                 </div>
@@ -297,18 +297,19 @@ export default function ZorgWebsite() {
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                  Met meer dan 10 jaar ervaring in de zorgverlening ben ik
+                  Met meer dan 8 jaar ervaring in de zorgverlening ben ik
                   gepassioneerd over het bieden van kwalitatieve, persoonlijke
                   zorg. Mijn missie is om mensen te helpen hun zelfstandigheid
-                  te behouden in de vertrouwde omgeving van hun eigen huis.
+                  te behouden in hun vertrouwde omgeving.
                 </p>
 
                 <div className="space-y-4 mb-8">
                   {[
-                    "Gediplomeerd verzorgende IG niveau 4",
-                    "BHV en EHBO gecertificeerd",
-                    "Specialisatie in dementiezorg",
-                    "Lid van beroepsvereniging V&VN",
+                    "BHV",
+                    "Medicatie Basis IVM,",
+                    "Medicatie opfris IVM",
+                    "Epilepsie IVM",
+                    "Weerbaarheid",
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-violet-700" />
@@ -364,18 +365,18 @@ export default function ZorgWebsite() {
               {
                 title: "Dagbesteding",
                 description:
-                  "Actuviteiten die bijdragen aan persoonlijke ontwikkeling en sociale interactie",
-                features: ["Schoonmaak", "Boodschappen", "Maaltijdbereiding"],
-              },
-              {
-                title: "Amulante zorg",
-                description:
-                  "Professionele zorg voor mensen die zelfstandig wonen, maar wel hulp nodig hebben",
+                  "Activiteiten die bijdragen aan persoonlijke ontwikkeling en sociale interactie",
                 features: [
                   "Gesprekken voeren",
                   "Uitjes begeleiden",
                   "Hobby's ondersteunen",
                 ],
+              },
+              {
+                title: "Ambulante zorg",
+                description:
+                  "Professionele zorg voor mensen die zelfstandig wonen, maar wel hulp nodig hebben",
+                features: ["Gesprekken voeren", "Uitjes begeleiden"],
               },
             ].map((dienst, index) => (
               <motion.div key={index} variants={fadeInUp}>
@@ -437,10 +438,7 @@ export default function ZorgWebsite() {
                       <h4 className="font-semibold text-gray-900 mb-1">
                         Telefoon
                       </h4>
-                      <p className="text-gray-600">06 - 12 34 56 78</p>
-                      <p className="text-sm text-gray-500">
-                        Bereikbaar van 8:00 - 20:00
-                      </p>
+                      <p className="text-gray-600">0683506001</p>
                     </div>
                   </div>
 
@@ -452,7 +450,7 @@ export default function ZorgWebsite() {
                       <h4 className="font-semibold text-gray-900 mb-1">
                         E-mail
                       </h4>
-                      <p className="text-gray-600">info@lucasz&b.nl</p>
+                      <p className="text-gray-600">lucaszorgt@hotmail.com</p>
                       <p className="text-sm text-gray-500">
                         Reactie binnen 24 uur
                       </p>
@@ -492,25 +490,24 @@ export default function ZorgWebsite() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <div className="space-y-2 text-gray-300">
-                <p>06 - 12 34 56 78</p>
-                <p>lucas@lvn.nl</p>
-                <p>Amsterdam en omgeving</p>
+                <p>0683506001</p>
+                <p>lucaszorgt@hotmail.com</p>
+                <p>Veluwe en omgeving</p>
               </div>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-4">Diensten</h4>
               <div className="space-y-2 text-gray-300">
-                <p>Persoonlijke verzorging</p>
-                <p>Huishoudelijke hulp</p>
-                <p>Dementiezorg</p>
-                <p>Respijtzorg</p>
+                <p>Individuele begeleiding</p>
+                <p>Dagbesteding</p>
+                <p>Ambulante zorg</p>
               </div>
             </div>
           </div>
 
           <div className="border-t border-gray-500 mt-8 pt-8 text-center text-white">
-            <p>&copy; 2024 LucasZ&B. Alle rechten voorbehouden.</p>
+            <p>&copy; 2025 LucasZ&B. Alle rechten voorbehouden.</p>
           </div>
         </div>
       </footer>
